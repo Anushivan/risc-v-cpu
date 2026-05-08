@@ -10,8 +10,8 @@ output logic [31:0] read_data2
 );
 
   logic [31:0] regs [31:0];
-  assign read_data1 = (rs1=5'b0) ? 32'b0 : regs[rs1];
-  assign read_data2 = (rs2=5'b0) ? 32'b0 : regs[rs2];
+  assign read_data1 = (rs1==5'b0) ? 32'b0 : regs[rs1];
+  assign read_data2 = (rs2==5'b0) ? 32'b0 : regs[rs2];
 
   always_ff @(posedge clk) begin
     if (we && rd != 5'b0)
