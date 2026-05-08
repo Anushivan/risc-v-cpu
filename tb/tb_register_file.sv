@@ -37,7 +37,7 @@ initial begin
     rs1 = 5'd2; rs2 = 5'd3;
     #1;
     $display("Read x2 = %0d (expected 10)", read_data1);
-    $display("Read x3 = %0d (expected 10)", read_data2);
+    $display("Read x3 = %0d (expected 20)", read_data2);
     
     $finish;
     end
