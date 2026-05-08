@@ -1,6 +1,6 @@
 module register_file (
 input logic clk, 
-input logic writeEnable,
+input logic we,
 input logic [4:0] rs1,
 input logic [4:0] rs2,
 input logic [4:0] rd,
