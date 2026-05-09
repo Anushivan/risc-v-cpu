@@ -3,7 +3,7 @@ A 32-bit RISC-V processor implemented in SystemVerilog.
 
 ## Current Progress
 - [x] Register File
-- [ ] ALU
+- [x] ALU
 - [ ] Control Unit
 - [ ] Top-level Integration
 
