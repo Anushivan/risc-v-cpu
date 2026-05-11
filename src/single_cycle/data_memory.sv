@@ -22,7 +22,7 @@ end
 
 always_ff @(posedge clk) begin
     
-if (we == 1)begin
+if (we == 1) begin
 
 memory[address] <= write_data;
 
