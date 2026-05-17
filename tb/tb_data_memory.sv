@@ -20,7 +20,7 @@ initial begin
 $dumpfile("dump.vcd");
 $dumpvars(0, tb_data_memory);
 
-clk = 0;
+clk = 0; we = 0;
 
 
 we = 1; address = 32'b101; write_data = 32'd42;
@@ -56,7 +56,6 @@ end
 
 
 end
-
 
 
 endmodule

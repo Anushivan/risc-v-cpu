@@ -15,7 +15,7 @@ initial begin
 
     clk = 0; we =0;
 
-
+    
     rd = 5'd1; write_data = 32'd42; we = 1;
     @(posedge clk); #1;
     we = 0;
