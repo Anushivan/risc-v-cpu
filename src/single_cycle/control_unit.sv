@@ -9,7 +9,7 @@ output logic alu_src
 );
 
 
-always_comb begin
+always @(*)  begin
 
 case(instruction[6:0]) 
 
