@@ -21,31 +21,37 @@ $dumpvars(0,tb_control_unit);
 
 
 instruction = 32'b00000000001100010000000010110011;
+#10;
 if(reg_write == 1 && alu_ctrl == 3'b000 && data_mem_write == 0 && branch == 0 && mem_to_reg == 0 && alu_src == 0) $display("Test for Add Passed");
 else $display("Test for Add Failed");
-#10;
+
 
 instruction = 32'b00000000000000010010000010000011;
+#10;
 if(reg_write == 1 && alu_ctrl == 3'b000 && data_mem_write == 0 && branch == 0 && mem_to_reg == 1 && alu_src == 1) $display("Test for LW Passed");
 else $display("Test for LW Failed");
-#10;
+
 
 instruction = 32'b00000000001100010010000000100011;
+#10;
 if(reg_write == 0 && alu_ctrl == 3'b000 && data_mem_write == 1 && branch == 0 && mem_to_reg == 0 && alu_src == 1) $display("Test for SW Passed");
 else $display("Test for SW Failed");
-#10;
+
 
 instruction = 32'b00000000001000001000000001100011;
+#10;
 if(reg_write == 0 && alu_ctrl == 3'b001 && data_mem_write == 0 && branch == 1 && mem_to_reg == 0 && alu_src == 0) $display("Test for beq Passed");
 else $display("Test for beq Failed");
-#10;
+
 
 instruction = 32'b00000000010100010000000010010011;
+#10;
 if(reg_write == 1 && alu_ctrl == 3'b000 && data_mem_write == 0 && branch == 0 && mem_to_reg == 0 && alu_src == 1) $display("Test for ADDI Passed");
 else $display("Test for ADDI Failed");
-#10;
+
 
 instruction = 32'b00000000000000000000000011101111;
+#10;
 if(reg_write == 1 && alu_ctrl == 3'b000 && data_mem_write == 0 && branch == 1 && mem_to_reg == 0 && alu_src == 1) $display("Test for JAL Passed");
 else $display("Test for JAL Failed");
 
