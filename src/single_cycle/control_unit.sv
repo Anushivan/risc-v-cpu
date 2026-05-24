@@ -62,6 +62,7 @@ end
    alu_src = 0;
 end
 
+//ADDI
 7'b0010011: begin
    reg_write = 1;
    case(instruction[14:12])
@@ -78,7 +79,7 @@ end
    alu_src = 1;
 end
 
-
+//jal
 7'b1101111:begin
    reg_write = 1;
    alu_ctrl = 3'b000;
@@ -86,13 +87,8 @@ end
    branch = 1;
    mem_to_reg = 0;
    alu_src = 1;
-
-
-
-
-
-
 end
+
 
 
 default: begin
