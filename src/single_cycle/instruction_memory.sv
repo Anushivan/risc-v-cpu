@@ -11,7 +11,6 @@ $readmemh("programs/test1.hex", array);
 
 end
 
-assign instruction = array[address];
-
+assign instruction = array[address >> 2];
 
 endmodule
