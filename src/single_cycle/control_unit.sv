@@ -6,6 +6,7 @@ output logic data_mem_write,
 output logic branch,
 output logic mem_to_reg,
 output logic alu_src
+output logic jal
 );
 
 
@@ -29,6 +30,7 @@ case(instruction[6:0])
    branch = 0;
    mem_to_reg = 0;
    alu_src = 0;
+   jal = 0;
 end
 // LW (data memory load)
 7'b0000011:begin
@@ -38,6 +40,7 @@ end
    branch = 0;
    mem_to_reg = 1;
    alu_src = 1;
+   jal = 0;
 end
 
 // SW (data memory store) 
@@ -49,7 +52,7 @@ end
    branch = 0;
    mem_to_reg = 0;
    alu_src = 1;
-
+   jal = 0;
 end
 
 //Branch
@@ -60,6 +63,7 @@ end
    branch = 1;
    mem_to_reg = 0;
    alu_src = 0;
+   jal = 0;
 end
 
 //ADDI
@@ -77,6 +81,7 @@ end
    branch = 0;
    mem_to_reg = 0;
    alu_src = 1;
+   jal = 0;
 end
 
 //jal
@@ -87,6 +92,7 @@ end
    branch = 1;
    mem_to_reg = 0;
    alu_src = 1;
+   jal = 1;
 end
 
 

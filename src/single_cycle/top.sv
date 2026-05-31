@@ -7,7 +7,7 @@ logic [31:0] pc, pc_next, pc_add4, pc_branch;
 
 logic [31:0] instruction;
 
-logic reg_write, mem_write, branch, mem_to_reg, alu_src;
+logic reg_write, mem_write, branch, mem_to_reg, alu_src, jal;
 logic [2:0] alu_ctrl;
 
 logic [31:0] read_data1, read_data2, write_back;
@@ -38,7 +38,7 @@ assign pc_src = branch & zero;
 assign pc_next = pc_src ? pc_branch : pc_add4;
 
 assign alu_input_b = alu_src ? imm : read_data2;
-assign write_back  = mem_to_reg ? mem_read_data : alu_result;
+assign write_back = jal ? pc_add4 : (mem_to_reg ? mem_read_data : alu_result);
 
 instruction_memory imem(
     .address(pc), 
@@ -52,7 +52,8 @@ control_unit ctrl_unit(
     .data_mem_write(mem_write),
     .branch(branch),
     .mem_to_reg(mem_to_reg),
-    .alu_src(alu_src)
+    .alu_src(alu_src),
+    .jal(jal)
     );
 
 register_file reg_file(
