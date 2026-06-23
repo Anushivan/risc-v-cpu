@@ -2,10 +2,25 @@
 A 32-bit RISC-V processor implemented in SystemVerilog.
 
 ## Current Progress
-- [x] Register File
-- [x] ALU
-- [X] Control Unit
-- [X] Top-level Integration
+
+  **Single-Cycle (complete)**
+- [x] ALU 
+- [x] Register file 
+- [x] Immediate generator 
+- [x] Control unit
+- [x] Instruction memory
+- [x] Data memory
+- [x] Top-level integration
+- [x] Tested: add, addi, lw, sw, beq (taken + not-taken), jal
+
+**Pipeline (in progress)**
+- [ ] IF stage
+- [ ] ID stage
+- [ ] EX stage
+- [ ] MEM stage
+- [ ] WB stage
+- [ ] Forwarding unit
+- [ ] Hazard detection unit
 
 ## Tools Used
 * **HDL:** SystemVerilog
@@ -14,7 +29,18 @@ A 32-bit RISC-V processor implemented in SystemVerilog.
 * **Environment:** WSL2 / VS Code
 
 ## How to Run
-1. Install Verilator: `sudo apt install verilator`
-2. Compile: `verilator -Wall --trace -cc top.sv --exe sim_main.cpp`
-3. Run: `./obj_dir/Vtop`
-4. View Waves: `gtkwave dump.vcd`
+
+### Install Icarus Verilog
+```bash
+sudo apt install iverilog
+```
+
+### Run a test
+```bash
+iverilog -g2012 -o sim/sim_top tb/tb_top.sv src/single_cycle/top.sv src/single_cycle/instruction_memory.sv src/single_cycle/data_memory.sv src/single_cycle/register_file.sv src/single_cycle/alu.sv src/single_cycle/control_unit.sv src/single_cycle/imm_gen.sv && vvp sim/sim_top
+```
+
+### View waveform
+```bash
+gtkwave sim/dump.vcd
+```
