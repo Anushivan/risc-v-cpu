@@ -5,7 +5,7 @@ output logic [2:0] alu_ctrl,
 output logic data_mem_write,
 output logic branch,
 output logic mem_to_reg,
-output logic alu_src
+output logic alu_src,
 output logic jal
 );
 
@@ -89,7 +89,7 @@ end
    reg_write = 1;
    alu_ctrl = 3'b000;
    data_mem_write = 0;
-   branch = 1;
+   branch = 0;
    mem_to_reg = 0;
    alu_src = 1;
    jal = 1;

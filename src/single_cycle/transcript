@@ -1,0 +1,12 @@
+# ** Note: (vsim-220) 'C:/altera_lite/25.1std/questa_fse/win64/../modelsim.ini' is used as the ini file.
+# vsim -c tb_top -do "run -all; quit" 
+# Start time: 17:38:51 on Jun 23,2026
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Note: (vopt-220) 'C:/altera_lite/25.1std/questa_fse/win64/../modelsim.ini' is used as the ini file.
+# ** Error (suppressible): register_file.sv(25): (vopt-7061) Variable 'regs' driven in an always_ff block, may not be driven by any other process. See register_file.sv(18).
+# Optimization failed
+# ** Error: (vopt-2064) Compiler back-end code generation process terminated due to previous errors with code 12.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=2, Warnings=0.
+# Error loading design
+# End time: 17:38:56 on Jun 23,2026, Elapsed time: 0:00:05
+# Errors: 2, Warnings: 0

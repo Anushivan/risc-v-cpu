@@ -18,4 +18,12 @@ output logic [31:0] read_data2
         regs[rd] <= write_data;
   end
 
+
+integer i;
+initial begin
+    for (i = 0; i < 32; i = i + 1)
+        regs[i] = 32'b0;
+end
+
+
 endmodule
