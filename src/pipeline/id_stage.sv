@@ -34,9 +34,15 @@ control_unit c_unit (
 );
 
 
-register_file reg_file (
+register_file reg_file(
+    .clk(clk),
+    .we(we),
+    .rs1(rs1),
+    .rs2(rs2),
     .rd(write_rd),
-    .*
+    .write_data(write_data),
+    .read_data1(read_data1),
+    .read_data2(read_data2)
 );
 
 imm_gen immgen(
