@@ -24,7 +24,7 @@ A 32-bit RISC-V processor implemented in SystemVerilog.
 
 ## Tools Used
 * **HDL:** SystemVerilog
-* **Simulator:** Verilator
+* **Simulator:** Intel Questa (Pipeline), Icarus (Single Cycle)
 * **Waveform Viewer:** GTKWave
 * **Environment:** WSL2 / VS Code
 
