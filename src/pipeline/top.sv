@@ -17,12 +17,7 @@ assign pc_next = ex_pc_src ? ex_branch_target : if_pc_add_4;
 logic [31:0] if_instruction;
 logic [31:0] if_pc_add_4;
 
-if_stage fetch(
-    .pc(pc),
-    .pc_next(pc_next),
-    .instruction(if_instruction),
-    .pc_add_4(if_pc_add_4)
-);
+if_stage fetch(.*);
 
 // IF/ID pipeline register
 logic [31:0] if_id_instruction;
@@ -56,7 +51,7 @@ logic [4:0] id_rs1;
 logic [4:0] id_rs2;
 
 id_stage decode(
-    .clk(clk),
+    .clk(clk),  //CAN CAHNGE TO .* SOON
     .if_id_instruction(if_id_instruction),
     .if_id_pc_add_4(if_id_pc_add_4),
     .we(wb_reg_write),
@@ -142,39 +137,10 @@ logic [31:0] ex_write_data;
 logic [31:0] ex_pc_add_4;
 logic ex_jal;
 
-ex_stage execute(
-    .id_ex_reg_write(id_ex_reg_write),
-    .id_ex_mem_to_reg(id_ex_mem_to_reg),
-    .id_ex_mem_write(id_ex_mem_write),
-    .id_ex_branch(id_ex_branch),
-    .id_ex_alu_src(id_ex_alu_src),
-    .id_ex_alu_ctrl(id_ex_alu_ctrl),
-    .id_ex_jal(id_ex_jal),
-    .id_ex_read_data1(id_ex_read_data1),
-    .id_ex_read_data2(id_ex_read_data2),
-    .id_ex_imm(id_ex_imm),
-    .id_ex_pc_add_4(id_ex_pc_add_4),
-    .id_ex_rd(id_ex_rd),
-    .id_ex_rs1(id_ex_rs1),
-    .id_ex_rs2(id_ex_rs2),
-    .result(ex_result),
-    .zero(ex_zero),
-    .pc_src(ex_pc_src),
-    .branch_target(ex_branch_target),
-    .reg_write(ex_reg_write),
-    .mem_to_reg(ex_mem_to_reg),
-    .mem_write(ex_mem_write),
-    .rd(ex_rd),
-    .write_data(ex_write_data),
-    .pc_add_4(ex_pc_add_4),
-    .jal(ex_jal)
-);
+ex_stage execute(.*);
 
 // EX/MEM pipeline register
-logic ex_mem_zero;
 logic [31:0] ex_mem_result;
-logic ex_mem_pc_src;
-logic [31:0] ex_mem_branch_target;
 logic ex_mem_reg_write;
 logic ex_mem_mem_to_reg;
 logic ex_mem_mem_write;
@@ -186,30 +152,78 @@ logic ex_mem_jal;
 always_ff @(posedge clk) begin
     if (reset) begin
         ex_mem_result <= 0;
-        ex_mem_zero <= 0;
         ex_mem_pc_add_4 <= 0;
-        ex_mem_branch_target <= 0;
         ex_mem_reg_write <= 0;
         ex_mem_mem_to_reg <= 0;
         ex_mem_mem_write <= 0;
         ex_mem_rd <= 5'b0;
         ex_mem_write_data <= 32'b0;
         ex_mem_jal <= 0;
-        ex_mem_pc_src <= 0;
     end
     else begin
         ex_mem_result <= ex_result;
-        ex_mem_zero <= ex_zero;
         ex_mem_pc_add_4 <= ex_pc_add_4;
-        ex_mem_branch_target <= ex_branch_target;
         ex_mem_reg_write <= ex_reg_write;
         ex_mem_mem_to_reg <= ex_mem_to_reg;
         ex_mem_mem_write <= ex_mem_write;
         ex_mem_rd <= ex_rd;
         ex_mem_write_data <= ex_write_data;
         ex_mem_jal <= ex_jal;
-        ex_mem_pc_src <= ex_pc_src;
     end
 end
+
+
+//MEM STAGE
+logic [31:0] mem_read_data;
+logic [31:0] mem_result;
+logic [31:0] mem_pc_add_4;
+logic [4:0] mem_rd;
+logic mem_reg_write;
+logic mem_mem_to_reg;
+logic mem_jal;
+
+mem_stage memory(.*);
+
+
+// MEM/WB pipeline register
+
+logic [31:0] mem_wb_read_data;
+logic [31:0] mem_wb_result;
+logic [31:0] mem_wb_pc_add_4;
+logic [4:0] mem_wb_rd;
+logic mem_wb_reg_write;
+logic mem_wb_mem_to_reg;
+logic mem_wb_jal;
+
+
+always_ff @(posedge clk) begin
+    if (reset) begin
+        mem_wb_read_data <= 0;
+        mem_wb_result <= 0;
+        mem_wb_pc_add_4 <= 0;
+        mem_wb_rd <= 0;
+        mem_wb_reg_write <= 0;
+        mem_wb_mem_to_reg <= 0;
+        mem_wb_jal <= 0;
+    end 
+
+    else begin
+        
+        mem_wb_read_data <= mem_read_data;
+        mem_wb_result <= mem_result;
+        mem_wb_pc_add_4 <= mem_pc_add_4;
+        mem_wb_rd <= mem_rd;
+        mem_wb_reg_write <= mem_reg_write;
+        mem_wb_mem_to_reg <= mem_mem_to_reg;
+        mem_wb_jal <= mem_jal;
+
+
+
+
+    end
+
+end
+
+
 
 endmodule
