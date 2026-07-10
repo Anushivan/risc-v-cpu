@@ -139,6 +139,9 @@ logic ex_jal;
 
 ex_stage execute(.*);
 
+
+
+
 // EX/MEM pipeline register
 logic [31:0] ex_mem_result;
 logic ex_mem_reg_write;
@@ -223,6 +226,14 @@ always_ff @(posedge clk) begin
     end
 
 end
+
+//WB STAGE
+logic [31:0] wb_write_data;
+logic [4:0] wb_rd;
+logic wb_reg_write;
+
+wb_stage writeback(.*);
+
 
 
 
