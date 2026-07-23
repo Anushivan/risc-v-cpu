@@ -1,7 +1,7 @@
 `timescale 1ns/1ps
 module tb_top;
 logic clk, reset;
-top dut(.*);
+single_cycle_top dut(.*);
 always #5 clk = ~clk;
 initial begin
     $dumpfile("sim/dump.vcd");

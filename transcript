@@ -1,0 +1,161 @@
+# do compile_pipeline.tcl
+# ** Warning: (vlib-34) Library already exists at "work".
+# Errors: 0, Warnings: 1
+# Questa Altera Starter FPGA Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
+# Start time: 15:47:34 on Jul 23,2026
+# vlog src/pipeline/alu.sv 
+# ** Note: (vlog-220) 'C:/altera_lite/25.1std/questa_fse/win64/../modelsim.ini' is used as the ini file.
+# -- Compiling module alu
+# 
+# Top level modules:
+# 	alu
+# End time: 15:47:34 on Jul 23,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Altera Starter FPGA Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
+# Start time: 15:47:35 on Jul 23,2026
+# vlog src/pipeline/control_unit.sv 
+# ** Note: (vlog-220) 'C:/altera_lite/25.1std/questa_fse/win64/../modelsim.ini' is used as the ini file.
+# -- Compiling module control_unit
+# 
+# Top level modules:
+# 	control_unit
+# End time: 15:47:35 on Jul 23,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Altera Starter FPGA Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
+# Start time: 15:47:35 on Jul 23,2026
+# vlog src/pipeline/data_memory.sv 
+# ** Note: (vlog-220) 'C:/altera_lite/25.1std/questa_fse/win64/../modelsim.ini' is used as the ini file.
+# -- Compiling module data_memory
+# 
+# Top level modules:
+# 	data_memory
+# End time: 15:47:35 on Jul 23,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Altera Starter FPGA Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
+# Start time: 15:47:35 on Jul 23,2026
+# vlog src/pipeline/imm_gen.sv 
+# ** Note: (vlog-220) 'C:/altera_lite/25.1std/questa_fse/win64/../modelsim.ini' is used as the ini file.
+# -- Compiling module imm_gen
+# 
+# Top level modules:
+# 	imm_gen
+# End time: 15:47:35 on Jul 23,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Altera Starter FPGA Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
+# Start time: 15:47:35 on Jul 23,2026
+# vlog src/pipeline/instruction_memory.sv 
+# ** Note: (vlog-220) 'C:/altera_lite/25.1std/questa_fse/win64/../modelsim.ini' is used as the ini file.
+# -- Compiling module instruction_memory
+# 
+# Top level modules:
+# 	instruction_memory
+# End time: 15:47:36 on Jul 23,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Questa Altera Starter FPGA Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
+# Start time: 15:47:36 on Jul 23,2026
+# vlog src/pipeline/register_file.sv 
+# ** Note: (vlog-220) 'C:/altera_lite/25.1std/questa_fse/win64/../modelsim.ini' is used as the ini file.
+# -- Compiling module register_file
+# 
+# Top level modules:
+# 	register_file
+# End time: 15:47:36 on Jul 23,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Altera Starter FPGA Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
+# Start time: 15:47:36 on Jul 23,2026
+# vlog src/pipeline/if_stage.sv 
+# ** Note: (vlog-220) 'C:/altera_lite/25.1std/questa_fse/win64/../modelsim.ini' is used as the ini file.
+# -- Compiling module if_stage
+# 
+# Top level modules:
+# 	if_stage
+# End time: 15:47:36 on Jul 23,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Altera Starter FPGA Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
+# Start time: 15:47:36 on Jul 23,2026
+# vlog src/pipeline/id_stage.sv 
+# ** Note: (vlog-220) 'C:/altera_lite/25.1std/questa_fse/win64/../modelsim.ini' is used as the ini file.
+# -- Compiling module id_stage
+# 
+# Top level modules:
+# 	id_stage
+# End time: 15:47:37 on Jul 23,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Questa Altera Starter FPGA Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
+# Start time: 15:47:37 on Jul 23,2026
+# vlog src/pipeline/ex_stage.sv 
+# ** Note: (vlog-220) 'C:/altera_lite/25.1std/questa_fse/win64/../modelsim.ini' is used as the ini file.
+# -- Compiling module ex_stage
+# 
+# Top level modules:
+# 	ex_stage
+# End time: 15:47:37 on Jul 23,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Altera Starter FPGA Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
+# Start time: 15:47:37 on Jul 23,2026
+# vlog src/pipeline/mem_stage.sv 
+# ** Note: (vlog-220) 'C:/altera_lite/25.1std/questa_fse/win64/../modelsim.ini' is used as the ini file.
+# -- Compiling module mem_stage
+# 
+# Top level modules:
+# 	mem_stage
+# End time: 15:47:37 on Jul 23,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Altera Starter FPGA Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
+# Start time: 15:47:37 on Jul 23,2026
+# vlog src/pipeline/wb_stage.sv 
+# ** Note: (vlog-220) 'C:/altera_lite/25.1std/questa_fse/win64/../modelsim.ini' is used as the ini file.
+# -- Compiling module wb_stage
+# 
+# Top level modules:
+# 	wb_stage
+# End time: 15:47:38 on Jul 23,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Questa Altera Starter FPGA Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
+# Start time: 15:47:38 on Jul 23,2026
+# vlog src/pipeline/top.sv 
+# ** Note: (vlog-220) 'C:/altera_lite/25.1std/questa_fse/win64/../modelsim.ini' is used as the ini file.
+# -- Compiling module top
+# 
+# Top level modules:
+# 	top
+# End time: 15:47:38 on Jul 23,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Altera Starter FPGA Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
+# Start time: 15:47:38 on Jul 23,2026
+# vlog tb/tb_pipeline.sv 
+# ** Note: (vlog-220) 'C:/altera_lite/25.1std/questa_fse/win64/../modelsim.ini' is used as the ini file.
+# -- Compiling module tb_pipeline
+# 
+# Top level modules:
+# 	tb_pipeline
+# End time: 15:47:38 on Jul 23,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# ** Note: (vsim-220) 'C:/altera_lite/25.1std/questa_fse/win64/../modelsim.ini' is used as the ini file.
+# vsim tb_pipeline 
+# Start time: 15:47:39 on Jul 23,2026
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# //  Questa Altera Starter FPGA Edition-64
+# //  Version 2025.2 win64 May 31 2025
+# //
+# // Unpublished work. Copyright 2025 Siemens
+# //
+# // This material contains trade secrets or otherwise confidential information
+# // owned by Siemens Industry Software Inc. or its affiliates (collectively,
+# // "SISW"), or its licensors. Access to and use of this information is strictly
+# // limited as set forth in the Customer's applicable agreements with SISW.
+# //
+# // This material may not be copied, distributed, or otherwise disclosed outside
+# // of the Customer's facilities without the express written permission of SISW,
+# // and may not be used in any way not expressly authorized by SISW.
+# //
+# Loading sv_std.std
+# Loading work.tb_pipeline(fast)
+# Test Passed: x1 == 5
+# Test Passed: x2 == -3
+# Test Passed: x3 == -7
+# Test Passed: x3 == 15
+# ** Note: $finish    : tb/tb_pipeline.sv(68)
+#    Time: 316 ns  Iteration: 0  Instance: /tb_pipeline
+# End time: 15:47:39 on Jul 23,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0

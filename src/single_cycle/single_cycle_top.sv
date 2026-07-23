@@ -1,4 +1,4 @@
-module top(
+module single_cycle_top(
 input logic clk,
 input logic reset
 );

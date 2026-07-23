@@ -104,6 +104,7 @@ default: begin
     branch = 0;
     mem_to_reg = 0;
     alu_src = 0;
+    jal = 0;
 end
 
 

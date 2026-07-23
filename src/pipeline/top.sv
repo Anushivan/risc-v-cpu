@@ -11,7 +11,7 @@ if (reset == 1) pc <= 32'b0;
 else pc <= pc_next;
 end
 
-assign pc_next = ex_pc_src ? ex_branch_target : if_pc_add_4;
+
 
 //IF STAGE
 logic [31:0] if_instruction;
@@ -34,7 +34,12 @@ always_ff @(posedge clk) begin
     end
 end
 
+
+
+
+
 //ID STAGE
+logic id_reset;
 logic id_reg_write;
 logic id_mem_to_reg;
 logic id_mem_write;
@@ -49,28 +54,33 @@ logic [31:0] id_pc_add_4;
 logic [4:0] id_rd;
 logic [4:0] id_rs1;
 logic [4:0] id_rs2;
+        //Must declare before using it.
+logic [31:0] wb_write_data;
+logic [4:0] wb_rd;
+logic wb_reg_write;
 
 id_stage decode(
-    .clk(clk),  //CAN CAHNGE TO .* SOON
+    .clk(clk),
+    .reset(reset),  
     .if_id_instruction(if_id_instruction),
     .if_id_pc_add_4(if_id_pc_add_4),
     .we(wb_reg_write),
     .write_rd(wb_rd),
     .write_data(wb_write_data),
-    .reg_write(id_reg_write),
-    .mem_to_reg(id_mem_to_reg),
-    .mem_write(id_mem_write),
-    .branch(id_branch),
-    .alu_src(id_alu_src),
-    .alu_ctrl(id_alu_ctrl),
-    .jal(id_jal),
-    .read_data1(id_read_data1),
-    .read_data2(id_read_data2),
-    .imm(id_imm),
-    .pc_add_4(id_pc_add_4),
-    .rd(id_rd),
-    .rs1(id_rs1),
-    .rs2(id_rs2)
+    .id_reg_write(id_reg_write),
+    .id_mem_to_reg(id_mem_to_reg),
+    .id_mem_write(id_mem_write),
+    .id_branch(id_branch),
+    .id_alu_src(id_alu_src),
+    .id_alu_ctrl(id_alu_ctrl),
+    .id_jal(id_jal),
+    .id_read_data1(id_read_data1),
+    .id_read_data2(id_read_data2),
+    .id_imm(id_imm),
+    .id_pc_add_4(id_pc_add_4),
+    .id_rd(id_rd),
+    .id_rs1(id_rs1),
+    .id_rs2(id_rs2)
 );
 
 // ID/EX pipeline register
@@ -136,6 +146,8 @@ logic [4:0] ex_rd;
 logic [31:0] ex_write_data;
 logic [31:0] ex_pc_add_4;
 logic ex_jal;
+
+assign pc_next = ex_pc_src ? ex_branch_target : if_pc_add_4;
 
 ex_stage execute(.*);
 
@@ -228,9 +240,7 @@ always_ff @(posedge clk) begin
 end
 
 //WB STAGE
-logic [31:0] wb_write_data;
-logic [4:0] wb_rd;
-logic wb_reg_write;
+
 
 wb_stage writeback(.*);
 
