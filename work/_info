@@ -31,6 +31,8 @@ R0
 R1
 R0
 R1
+R0
+R1
 !s11f vlog 2025.2 2025.05, May 31 2025
 13
 !s112 1.1
@@ -42,49 +44,48 @@ Z2 d//wsl.localhost/Ubuntu-22.04/home/anushivan/risc_v_project
 T_opt
 !i145 1
 !i144 0
-!s110 1784836026
-V3OXNIiQ<:gXjR>L@X_efz1
+!s110 1784856727
+VGaVS7nO^1n1YEBagK8^Vh3
 04 11 4 work tb_pipeline fast 0
-=1-280c509c3aa6-6a626fb9-42-3c20
+=1-280c509c3aa6-6a62c096-3a-78ac
 R1
 !s12f OEM100
 !s12b OEM100
-!s124 OEM10U13 
+!s124 OEM10U14 
 !s135 nogc
 o-quiet -auto_acc_if_foreign -work work
 tCvgOpt 0 defaultOptions 1107585188
 n@_opt
 OL;O;2025.2;82
-R2
 valu
 2src/pipeline/alu.sv
 Z3 DXx6 sv_std 3 std 0 22 @5XbY]_OacJl=`ToSm<M^0
-!s110 1784836054
+Z4 !s110 1784856721
 !i10b 1
 !s100 >C5EJ;I0I_fBiAMKU0E0O1
 I5zlURZGBM4XA3:zTk<3693
 S1
 R2
-Z4 w1782604574
+Z5 w1782604574
 8src/pipeline/alu.sv
 Fsrc/pipeline/alu.sv
-!i122 229
+!i122 267
 L0 1 31
-Z5 VDg1SIo80bB@j0V0VzS_@n1
-Z6 OL;L;2025.2;82
+Z6 VDg1SIo80bB@j0V0VzS_@n1
+Z7 OL;L;2025.2;82
 r1
 !s85 0
 31
-!s108 1784836054.000000
+!s108 1784856720.000000
 !s107 src/pipeline/alu.sv|
 !s90 src/pipeline/alu.sv|
 !i113 0
-Z7 o-L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
-Z8 tCvgOpt 0 defaultOptions 1085333592
+Z8 o-L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z9 tCvgOpt 0 defaultOptions 1085333592
 vcontrol_unit
 2src/pipeline/control_unit.sv
 R3
-Z9 !s110 1784836055
+R4
 !i10b 1
 !s100 R9YoC5_aP@MXKAD`@512l2
 IWh;7H4n1n^Ag8[ZF>O=UL1
@@ -93,35 +94,35 @@ R2
 w1784149915
 8src/pipeline/control_unit.sv
 Fsrc/pipeline/control_unit.sv
-!i122 230
+!i122 268
 L0 1 120
-R5
 R6
+R7
 r1
 !s85 0
 31
-Z10 !s108 1784836055.000000
+Z10 !s108 1784856721.000000
 !s107 src/pipeline/control_unit.sv|
 !s90 src/pipeline/control_unit.sv|
 !i113 0
-R7
 R8
+R9
 vdata_memory
 2src/pipeline/data_memory.sv
 R3
-R9
+R4
 !i10b 1
 !s100 dB@5aYai_Zb2nGCK25?o<2
 IVD_i:F7_FIGHQ`QGoAmMD0
 S1
 R2
-R4
+R5
 8src/pipeline/data_memory.sv
 Fsrc/pipeline/data_memory.sv
-!i122 231
+!i122 269
 L0 1 33
-R5
 R6
+R7
 r1
 !s85 0
 31
@@ -129,33 +130,58 @@ R10
 !s107 src/pipeline/data_memory.sv|
 !s90 src/pipeline/data_memory.sv|
 !i113 0
-R7
 R8
+R9
 vex_stage
 2src/pipeline/ex_stage.sv
 R3
-Z11 !s110 1784836057
+Z11 !s110 1784856723
 !i10b 1
-!s100 R9IT^8kI4D_0gll>e]7IG0
-InbHMW7kb3DjKbj1V];79l0
+!s100 R[fo5Y`UlgFi1N8M;P;4i3
+I21gdf88<cV91BO3Xa^^A]0
 S1
 R2
-w1783547594
+w1784855006
 8src/pipeline/ex_stage.sv
 Fsrc/pipeline/ex_stage.sv
-!i122 237
-L0 1 57
-R5
+!i122 275
+L0 1 80
 R6
+R7
 r1
 !s85 0
 31
-Z12 !s108 1784836057.000000
+Z12 !s108 1784856723.000000
 !s107 src/pipeline/ex_stage.sv|
 !s90 src/pipeline/ex_stage.sv|
 !i113 0
-R7
 R8
+R9
+vforwarding_unit
+2src/pipeline/forwarding_unit.sv
+R3
+Z13 !s110 1784856724
+!i10b 1
+!s100 [[4D]:9]i1iPTgzbSj1;H1
+IbZD;Uz<_gOkedC9hW_Z4h2
+S1
+R2
+w1784853298
+8src/pipeline/forwarding_unit.sv
+Fsrc/pipeline/forwarding_unit.sv
+!i122 278
+L0 1 44
+R6
+R7
+r1
+!s85 0
+31
+Z14 !s108 1784856724.000000
+!s107 src/pipeline/forwarding_unit.sv|
+!s90 src/pipeline/forwarding_unit.sv|
+!i113 0
+R8
+R9
 vid_stage
 2src/pipeline/id_stage.sv
 R3
@@ -168,23 +194,23 @@ R2
 w1784146951
 8src/pipeline/id_stage.sv
 Fsrc/pipeline/id_stage.sv
-!i122 236
+!i122 274
 L0 1 59
-R5
 R6
+R7
 r1
 !s85 0
 31
-Z13 !s108 1784836056.000000
+R12
 !s107 src/pipeline/id_stage.sv|
 !s90 src/pipeline/id_stage.sv|
 !i113 0
-R7
 R8
+R9
 vif_stage
 2src/pipeline/if_stage.sv
 R3
-Z14 !s110 1784836056
+R11
 !i10b 1
 !s100 eSal3KiU?QX8P0bRdFd@I1
 ISzDhiChca=i^h;;C6Q[4C1
@@ -193,35 +219,35 @@ R2
 w1783547554
 8src/pipeline/if_stage.sv
 Fsrc/pipeline/if_stage.sv
-!i122 235
+!i122 273
 Z15 L0 1 15
-R5
 R6
+R7
 r1
 !s85 0
 31
-R13
+Z16 !s108 1784856722.000000
 !s107 src/pipeline/if_stage.sv|
 !s90 src/pipeline/if_stage.sv|
 !i113 0
-R7
 R8
+R9
 vimm_gen
 2src/pipeline/imm_gen.sv
 R3
-R9
+Z17 !s110 1784856722
 !i10b 1
 !s100 nl12@^8F:o2hR[FKSom5T2
 Ig1oK:zSOV_QR6oaUGF:iG1
 S1
 R2
-R4
+R5
 8src/pipeline/imm_gen.sv
 Fsrc/pipeline/imm_gen.sv
-!i122 232
+!i122 270
 L0 1 21
-R5
 R6
+R7
 r1
 !s85 0
 31
@@ -229,12 +255,12 @@ R10
 !s107 src/pipeline/imm_gen.sv|
 !s90 src/pipeline/imm_gen.sv|
 !i113 0
-R7
 R8
+R9
 vinstruction_memory
 2src/pipeline/instruction_memory.sv
 R3
-R14
+R17
 !i10b 1
 !s100 IiEO]WB[D9E25F_Nk`PEg2
 I;Iz_0z=Z_R0A8ZfiG7V5W1
@@ -243,19 +269,19 @@ R2
 w1784138340
 8src/pipeline/instruction_memory.sv
 Fsrc/pipeline/instruction_memory.sv
-!i122 233
+!i122 271
 R15
-R5
 R6
+R7
 r1
 !s85 0
 31
-R10
+R16
 !s107 src/pipeline/instruction_memory.sv|
 !s90 src/pipeline/instruction_memory.sv|
 !i113 0
-R7
 R8
+R9
 vmem_stage
 2src/pipeline/mem_stage.sv
 R3
@@ -268,10 +294,10 @@ R2
 w1783547293
 8src/pipeline/mem_stage.sv
 Fsrc/pipeline/mem_stage.sv
-!i122 238
+!i122 276
 L0 1 43
-R5
 R6
+R7
 r1
 !s85 0
 31
@@ -279,12 +305,12 @@ R12
 !s107 src/pipeline/mem_stage.sv|
 !s90 src/pipeline/mem_stage.sv|
 !i113 0
-R7
 R8
+R9
 vregister_file
 2src/pipeline/register_file.sv
 R3
-R14
+R17
 !i10b 1
 !s100 e:o8b9^C8aOkYfc:3nRR11
 IXQKM^cW:MCl1BdoN?^g0K2
@@ -293,73 +319,73 @@ R2
 w1784146909
 8src/pipeline/register_file.sv
 Fsrc/pipeline/register_file.sv
-!i122 234
+!i122 272
 L0 1 30
-R5
 R6
+R7
 r1
 !s85 0
 31
-R13
+R16
 !s107 src/pipeline/register_file.sv|
 !s90 src/pipeline/register_file.sv|
 !i113 0
-R7
 R8
+R9
 vtb_pipeline
 2tb/tb_pipeline.sv
 R3
-Z16 !s110 1784836058
+Z18 !s110 1784856725
 !i10b 1
-!s100 bV`chHd_N6Ti?aza@cGz80
-IX@ec@XIYfV;89I;=RQ3Y20
+!s100 7DmbGB3MBTUAiA;D@bhOc1
+IfaAda]SH:`l6Vd>`k:V^Z2
 S1
 R2
-w1784836016
+w1784856712
 8tb/tb_pipeline.sv
 Ftb/tb_pipeline.sv
-!i122 241
-L0 3 70
-R5
+!i122 280
+L0 3 91
 R6
+R7
 r1
 !s85 0
 31
-Z17 !s108 1784836058.000000
+!s108 1784856725.000000
 !s107 tb/tb_pipeline.sv|
 !s90 tb/tb_pipeline.sv|
 !i113 0
-R7
 R8
+R9
 vtop
 2src/pipeline/top.sv
 R3
-R16
+R18
 !i10b 1
-!s100 G46V<`BaCa9UblF4=BJ4z3
-IkRjMe4n5G6oR5Z[N3eSk43
+!s100 nNON9]g8]2g2hBdm[nHDD1
+IM]JT1iO7;C[djE73IIBc_3
 S1
 R2
-w1784149956
+w1784856623
 8src/pipeline/top.sv
 Fsrc/pipeline/top.sv
-!i122 240
-L0 1 250
-R5
+!i122 279
+L0 1 259
 R6
+R7
 r1
 !s85 0
 31
-R17
+R14
 !s107 src/pipeline/top.sv|
 !s90 src/pipeline/top.sv|
 !i113 0
-R7
 R8
+R9
 vwb_stage
 2src/pipeline/wb_stage.sv
 R3
-R16
+R13
 !i10b 1
 !s100 8A@:1iXkTEfT2Jh_PlzfZ0
 I2VF=R>lX6lY9jiTbBeF?K3
@@ -368,16 +394,16 @@ R2
 w1783704502
 8src/pipeline/wb_stage.sv
 Fsrc/pipeline/wb_stage.sv
-!i122 239
+!i122 277
 L0 1 20
-R5
 R6
+R7
 r1
 !s85 0
 31
-R12
+R14
 !s107 src/pipeline/wb_stage.sv|
 !s90 src/pipeline/wb_stage.sv|
 !i113 0
-R7
 R8
+R9

@@ -37,7 +37,6 @@ end
 
 
 
-
 //ID STAGE
 logic id_reset;
 logic id_reg_write;
@@ -54,7 +53,6 @@ logic [31:0] id_pc_add_4;
 logic [4:0] id_rd;
 logic [4:0] id_rs1;
 logic [4:0] id_rs2;
-        //Must declare before using it.
 logic [31:0] wb_write_data;
 logic [4:0] wb_rd;
 logic wb_reg_write;
@@ -146,8 +144,13 @@ logic [4:0] ex_rd;
 logic [31:0] ex_write_data;
 logic [31:0] ex_pc_add_4;
 logic ex_jal;
+logic [1:0] forward1;
+logic [1:0] forward2;
+logic [31:0] frwd_ex_mem_result;
+logic [31:0] frwd_wb_write_data;
 
 assign pc_next = ex_pc_src ? ex_branch_target : if_pc_add_4;
+
 
 ex_stage execute(.*);
 
@@ -187,6 +190,8 @@ always_ff @(posedge clk) begin
     end
 end
 
+assign frwd_ex_mem_result = ex_mem_result;
+assign frwd_wb_write_data = wb_write_data;
 
 //MEM STAGE
 logic [31:0] mem_read_data;
@@ -245,6 +250,10 @@ end
 wb_stage writeback(.*);
 
 
+//FORWARDING UNIT
+
+
+forwarding_unit forward(.*);
 
 
 endmodule
