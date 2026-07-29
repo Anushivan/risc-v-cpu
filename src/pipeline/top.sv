@@ -6,6 +6,7 @@ module top(
 //PC COUNTER
 logic [31:0] pc, pc_next;
 logic stall;
+logic ex_pc_src;
 
 always_ff @(posedge clk) begin
 if (reset) pc <= 32'b0;
@@ -25,7 +26,7 @@ logic [31:0] if_id_instruction;
 logic [31:0] if_id_pc_add_4;
 
 always_ff @(posedge clk) begin
-    if (reset) begin
+    if (reset || ex_pc_src) begin
         if_id_instruction <= 32'b0;
         if_id_pc_add_4 <= 32'b0;
     end
@@ -99,7 +100,7 @@ logic [4:0] id_ex_rs1;
 logic [4:0] id_ex_rs2;
 
 always_ff @(posedge clk) begin
-    if (reset || stall) begin
+    if (reset || stall || ex_pc_src) begin
         id_ex_reg_write <= 0;
         id_ex_mem_to_reg <= 0;
         id_ex_mem_write <= 0;
@@ -138,7 +139,6 @@ end
 // EX STAGE
 logic [31:0] ex_result;
 logic ex_zero;
-logic ex_pc_src;
 logic [31:0] ex_branch_target;
 logic ex_reg_write;
 logic ex_mem_to_reg;
