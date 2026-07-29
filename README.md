@@ -1,6 +1,6 @@
 # RISC-V CPU
 
-A 32-bit RISC-V processor implemented in SystemVerilog. Includes a complete single-cycle implementation and a 5-stage pipeline with forwarding, hazard detection, and control hazard handling still in progress.
+A 32-bit RISC-V processor implemented in SystemVerilog. Includes a complete single-cycle implementation and a fully working 5-stage pipeline with forwarding, hazard detection, and control hazard handling.
 
 ## Current Progress
 
@@ -14,17 +14,23 @@ A 32-bit RISC-V processor implemented in SystemVerilog. Includes a complete sing
 - [x] Top-level integration
 - [x] Tested: add, addi, lw, sw, beq (taken + not-taken), jal
 
-**Pipeline (in progress)**
+**Pipeline (complete)**
 - [x] IF stage
 - [x] ID stage
 - [x] EX stage
 - [x] MEM stage
 - [x] WB stage
 - [x] Pipeline registers (IF/ID, ID/EX, EX/MEM, MEM/WB)
-- [x] Basic testing (addi and add without hazards)
-- [x] Forwarding unit
-- [ ] Hazard detection unit
-- [ ] Control hazard flush logic
+- [x] Forwarding unit (RAW data hazards)
+- [x] Hazard detection unit (load-use stall)
+- [x] Control hazard flush logic (branches and jumps)
+- [x] Tested: addi, add, load-use stall, branch, jal
+
+**Next Steps**
+- [ ] UVM testbench with self-checking scoreboard
+- [ ] SystemVerilog assertions
+- [ ] Functional coverage
+- [ ] Matrix multiplier extension
 
 ## Tools Used
 * **HDL:** SystemVerilog
