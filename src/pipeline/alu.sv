@@ -20,7 +20,7 @@ case (alu_ctrl)
 
 endcase
 
-zero = (result == 0) ? 1'b1 : 1'b0;
+zero = (result == 32'b0) ? 1'b1 : 1'b0;
 
 end
 

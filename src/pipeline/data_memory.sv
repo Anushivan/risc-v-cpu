@@ -11,7 +11,7 @@ logic [31:0] memory [63:0];
 
 always_comb begin
 
-if (we == 0) begin
+if (!we) begin
 
 read_data = memory[address];
 
@@ -22,7 +22,7 @@ end
 
 always_ff @(posedge clk) begin
     
-if (we == 1) begin
+if (we) begin
 
 memory[address] <= write_data;
 

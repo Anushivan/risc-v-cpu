@@ -5,10 +5,11 @@ module top(
 
 //PC COUNTER
 logic [31:0] pc, pc_next;
+logic stall;
 
 always_ff @(posedge clk) begin
-if (reset == 1) pc <= 32'b0;
-else pc <= pc_next;
+if (reset) pc <= 32'b0;
+else if (!stall) pc <= pc_next;
 end
 
 
@@ -28,7 +29,7 @@ always_ff @(posedge clk) begin
         if_id_instruction <= 32'b0;
         if_id_pc_add_4 <= 32'b0;
     end
-    else begin
+    else if (!stall) begin
         if_id_instruction <= if_instruction;
         if_id_pc_add_4 <= if_pc_add_4;
     end
@@ -98,7 +99,7 @@ logic [4:0] id_ex_rs1;
 logic [4:0] id_ex_rs2;
 
 always_ff @(posedge clk) begin
-    if (reset) begin
+    if (reset || stall) begin
         id_ex_reg_write <= 0;
         id_ex_mem_to_reg <= 0;
         id_ex_mem_write <= 0;
@@ -130,6 +131,8 @@ always_ff @(posedge clk) begin
         id_ex_rs1 <= id_rs1;
         id_ex_rs2 <= id_rs2;
     end
+
+ 
 end
 
 // EX STAGE
@@ -254,6 +257,11 @@ wb_stage writeback(.*);
 
 
 forwarding_unit forward(.*);
+
+
+//HAZARD UNIT
+
+hazard_unit hazard(.*);
 
 
 endmodule

@@ -11,6 +11,7 @@ vlog src/pipeline/ex_stage.sv
 vlog src/pipeline/mem_stage.sv
 vlog src/pipeline/wb_stage.sv
 vlog src/pipeline/forwarding_unit.sv
+vlog src/pipeline/hazard_unit.sv
 vlog src/pipeline/top.sv
 vlog tb/tb_pipeline.sv
 vsim tb_pipeline

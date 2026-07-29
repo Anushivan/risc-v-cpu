@@ -16,6 +16,10 @@ $dumpvars(0,tb_pipeline);
 clk = 0;
 
 
+for (int j = 0; j < 64; j = j + 1) 
+    dut.fetch.imem.array[j] = 32'h00000013;
+$readmemh("programs/test_stall.hex", dut.fetch.imem.array);
+
 //TEST ADDI WITHOUT FORWARDING
 
 $readmemh("programs/pipeline_test_addi.hex", dut.fetch.imem.array);
@@ -49,6 +53,9 @@ end
 
 $display("NEXT TEST");
 
+for (int j = 0; j < 64; j = j + 1) 
+    dut.fetch.imem.array[j] = 32'h00000013;
+$readmemh("programs/test_stall.hex", dut.fetch.imem.array);
 
 //TEST ADDI WITHOUT FORWARDING
 $readmemh("programs/pipeline_test_add.hex", dut.fetch.imem.array);
@@ -68,6 +75,9 @@ end
 
 $display("NEXT TEST");
 
+for (int j = 0; j < 64; j = j + 1) 
+    dut.fetch.imem.array[j] = 32'h00000013;
+$readmemh("programs/test_stall.hex", dut.fetch.imem.array);
 
 //TEST ADD WITH FORWARDING
 $readmemh("programs/test_forwarding.hex", dut.fetch.imem.array);
@@ -83,6 +93,36 @@ end
 else begin
     $display("Test 3 Failed: x3 == %0d", dut.decode.reg_file.regs[3]);
 end
+
+
+
+$display("NEXT TEST");
+
+for (int j = 0; j < 64; j = j + 1) 
+    dut.fetch.imem.array[j] = 32'h00000013;
+$readmemh("programs/test_stall.hex", dut.fetch.imem.array);
+
+//TEST LOAD-USE HAZARD (STALL)
+$readmemh("programs/pipeline_test_lw.hex", dut.fetch.imem.array);
+
+
+
+reset = 1;
+@(posedge clk); #1;
+reset = 0;
+repeat(15) @(posedge clk); #1;
+
+
+
+
+
+if (dut.decode.reg_file.regs[3] == 84) begin
+    $display("Test 4 Passed: x3 == %0d", dut.decode.reg_file.regs[3]);
+end 
+else begin
+    $display("Test 4 Failed: x3 == %0d", dut.decode.reg_file.regs[3]);
+end
+
 
 
 
