@@ -1,6 +1,5 @@
-# RISC-V CPU
-
-A 32-bit RISC-V processor implemented in SystemVerilog. Includes a complete single-cycle implementation and a fully working 5-stage pipeline with forwarding, hazard detection, and control hazard handling.
+# RISC-V CPU + Matrix Multiplier Accelerator
+A 32-bit RISC-V processor implemented in SystemVerilog. Includes a complete single-cycle implementation and a fully working 5-stage pipeline with forwarding, hazard detection, and control hazard handling. Currently being extended with a memory-mapped matrix multiplier accelerator.
 
 ## Current Progress
 
@@ -26,40 +25,20 @@ A 32-bit RISC-V processor implemented in SystemVerilog. Includes a complete sing
 - [x] Control hazard flush logic (branches and jumps)
 - [x] Tested: addi, add, load-use stall, branch, jal
 
-**Next Steps**
+**Matrix Multiplier Accelerator (in progress)**
+- [ ] Memory-mapped register interface
+- [ ] Accelerator control registers (start, status, dimensions)
+- [ ] Compute core (systolic array or parallel multiply-accumulate)
+- [ ] Integration with RISC-V memory bus
+- [ ] Software-controlled via load/store instructions from the CPU
+- [ ] End-to-end test: CPU program drives accelerator and verifies result
+
+**Verification (planned)**
 - [ ] UVM testbench with self-checking scoreboard
 - [ ] SystemVerilog assertions
 - [ ] Functional coverage
-- [ ] Matrix multiplier extension
 
-## Tools Used
-* **HDL:** SystemVerilog
-* **Simulator:** Intel Questa (Pipeline), Icarus Verilog (Single Cycle)
-* **Waveform Viewer:** GTKWave / Questa
-* **Environment:** WSL2 / VS Code
+## Architecture Overview
 
-## How to Run
-
-### Single-Cycle (Icarus Verilog)
-
-Install Icarus:
-```bash
-sudo apt install iverilog
-```
-
-Compile and run:
-```bash
-iverilog -g2012 -o sim/sim_top tb/tb_top.sv src/single_cycle/single_cycle_top.sv src/single_cycle/instruction_memory.sv src/single_cycle/data_memory.sv src/single_cycle/register_file.sv src/single_cycle/alu.sv src/single_cycle/control_unit.sv src/single_cycle/imm_gen.sv && vvp sim/sim_top
-```
-
-### Pipeline (Intel Questa)
-
-Compile and run using the TCL script:
-```bash
-vsim -c -do compile_pipeline.tcl
-```
-
-### View waveform
-```bash
-gtkwave sim/dump.vcd
-```
+### Pipeline
+The processor implements a classic 5-stage RISC-V pipeline:
