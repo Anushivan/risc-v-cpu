@@ -39,8 +39,3 @@ A 32-bit RISC-V processor implemented in SystemVerilog. Includes a complete sing
 - [ ] UVM testbench with self-checking scoreboard
 - [ ] SystemVerilog assertions
 - [ ] Functional coverage
-
-## Architecture Overview
-
-### Pipeline
-The processor implements a classic 5-stage RISC-V pipeline:
