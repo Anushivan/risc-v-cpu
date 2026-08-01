@@ -28,10 +28,12 @@ A 32-bit RISC-V processor implemented in SystemVerilog. Includes a complete sing
 **Matrix Multiplier Accelerator (in progress)**
 - [ ] Memory-mapped register interface
 - [ ] Accelerator control registers (start, status, dimensions)
-- [ ] Compute core (systolic array or parallel multiply-accumulate)
+- [ ] Compute core (parallel multiply-accumulate)
 - [ ] Integration with RISC-V memory bus
 - [ ] Software-controlled via load/store instructions from the CPU
-- [ ] End-to-end test: CPU program drives accelerator and verifies result
+- [ ] End-to-end test v1: CPU program drives accelerator and verifies result
+- [ ] Compute core v2: parallel MAC array
+- [ ] End-to-end test v2: verify performance improvement (cycles taken)
 
 **Verification (planned)**
 - [ ] UVM testbench with self-checking scoreboard
