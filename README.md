@@ -26,7 +26,7 @@ A 32-bit RISC-V processor implemented in SystemVerilog. Includes a complete sing
 - [x] Tested: addi, add, load-use stall, branch, jal
 
 **Matrix Multiplier Accelerator (in progress)**
-- [ ] Memory-mapped register interface
+- [] Memory-mapped register interface
 - [ ] Accelerator control registers (start, status, dimensions)
 - [ ] Compute core (parallel multiply-accumulate)
 - [ ] Integration with RISC-V memory bus

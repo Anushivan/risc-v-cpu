@@ -13,7 +13,10 @@ vlog src/pipeline/wb_stage.sv
 vlog src/pipeline/forwarding_unit.sv
 vlog src/pipeline/hazard_unit.sv
 vlog src/pipeline/top.sv
+vlog src/pipeline/accelerator/matmul_unit.sv
+vlog src/pipeline/accelerator/mac_unit.sv
+vlog src/pipeline/accelerator/address_decoder.sv
 vlog tb/tb_pipeline.sv
-vsim tb_pipeline
-run -all
-quit
+vopt +acc tb_pipeline -o tb_pipeline_acc
+vsim tb_pipeline_acc
+add wave -r /*
