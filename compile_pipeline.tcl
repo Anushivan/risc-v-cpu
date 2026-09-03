@@ -16,7 +16,7 @@ vlog src/pipeline/top.sv
 vlog src/pipeline/accelerator/matmul_unit.sv
 vlog src/pipeline/accelerator/mac_unit.sv
 vlog src/pipeline/accelerator/address_decoder.sv
-vlog tb/tb_pipeline.sv
-vopt +acc tb_pipeline -o tb_pipeline_acc
-vsim tb_pipeline_acc
-add wave -r /*
+vlog tb/tb_mac_unit.sv
+vopt +acc tb_mac_unit -o tb_mac_unit_acc
+vsim tb_mac_unit_acc
+run -all

@@ -1,0 +1,5 @@
+__design_bin_path=//wsl.localhost/Ubuntu-22.04/home/anushivan/risc_v_project
+incr_run_version=16387
+incr_partial_run_stats=3:3
+incr_no_change_stats=1:0
+opt_data_elab=//wsl.localhost/Ubuntu-22.04/home/anushivan/risc_v_project/work/tb_mac_unit_acc

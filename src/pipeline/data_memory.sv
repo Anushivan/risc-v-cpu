@@ -13,7 +13,7 @@ always_comb begin
 
 if (!we) begin
 
-read_data = memory[address];
+read_data = memory[address>>2];
 
 end 
 

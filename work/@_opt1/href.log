@@ -1,0 +1,6 @@
+BEGIN 1:register_file:fast:work
+    regs :  1:tb_pipeline:fast:work
+END 
+BEGIN 1:instruction_memory:fast:work
+    array :  1:tb_pipeline:fast:work
+END 

@@ -1,3 +1,207 @@
+# do compile_pipeline.tcl
+# ** Warning: (vlib-34) Library already exists at "work".
+# Errors: 0, Warnings: 1
+# Questa Altera Starter FPGA Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
+# Start time: 13:26:04 on Sep 03,2026
+# vlog src/pipeline/alu.sv 
+# ** Note: (vlog-220) 'C:/altera_lite/25.1std/questa_fse/win64/../modelsim.ini' is used as the ini file.
+# -- Compiling module alu
+# 
+# Top level modules:
+# 	alu
+# End time: 13:26:05 on Sep 03,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Questa Altera Starter FPGA Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
+# Start time: 13:26:05 on Sep 03,2026
+# vlog src/pipeline/control_unit.sv 
+# ** Note: (vlog-220) 'C:/altera_lite/25.1std/questa_fse/win64/../modelsim.ini' is used as the ini file.
+# -- Compiling module control_unit
+# 
+# Top level modules:
+# 	control_unit
+# End time: 13:26:05 on Sep 03,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Altera Starter FPGA Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
+# Start time: 13:26:05 on Sep 03,2026
+# vlog src/pipeline/data_memory.sv 
+# ** Note: (vlog-220) 'C:/altera_lite/25.1std/questa_fse/win64/../modelsim.ini' is used as the ini file.
+# -- Compiling module data_memory
+# 
+# Top level modules:
+# 	data_memory
+# End time: 13:26:06 on Sep 03,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Questa Altera Starter FPGA Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
+# Start time: 13:26:06 on Sep 03,2026
+# vlog src/pipeline/imm_gen.sv 
+# ** Note: (vlog-220) 'C:/altera_lite/25.1std/questa_fse/win64/../modelsim.ini' is used as the ini file.
+# -- Compiling module imm_gen
+# 
+# Top level modules:
+# 	imm_gen
+# End time: 13:26:06 on Sep 03,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Altera Starter FPGA Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
+# Start time: 13:26:06 on Sep 03,2026
+# vlog src/pipeline/instruction_memory.sv 
+# ** Note: (vlog-220) 'C:/altera_lite/25.1std/questa_fse/win64/../modelsim.ini' is used as the ini file.
+# -- Compiling module instruction_memory
+# 
+# Top level modules:
+# 	instruction_memory
+# End time: 13:26:07 on Sep 03,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Questa Altera Starter FPGA Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
+# Start time: 13:26:07 on Sep 03,2026
+# vlog src/pipeline/register_file.sv 
+# ** Note: (vlog-220) 'C:/altera_lite/25.1std/questa_fse/win64/../modelsim.ini' is used as the ini file.
+# -- Compiling module register_file
+# 
+# Top level modules:
+# 	register_file
+# End time: 13:26:07 on Sep 03,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Altera Starter FPGA Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
+# Start time: 13:26:07 on Sep 03,2026
+# vlog src/pipeline/if_stage.sv 
+# ** Note: (vlog-220) 'C:/altera_lite/25.1std/questa_fse/win64/../modelsim.ini' is used as the ini file.
+# -- Compiling module if_stage
+# 
+# Top level modules:
+# 	if_stage
+# End time: 13:26:07 on Sep 03,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Altera Starter FPGA Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
+# Start time: 13:26:08 on Sep 03,2026
+# vlog src/pipeline/id_stage.sv 
+# ** Note: (vlog-220) 'C:/altera_lite/25.1std/questa_fse/win64/../modelsim.ini' is used as the ini file.
+# -- Compiling module id_stage
+# 
+# Top level modules:
+# 	id_stage
+# End time: 13:26:08 on Sep 03,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Altera Starter FPGA Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
+# Start time: 13:26:08 on Sep 03,2026
+# vlog src/pipeline/ex_stage.sv 
+# ** Note: (vlog-220) 'C:/altera_lite/25.1std/questa_fse/win64/../modelsim.ini' is used as the ini file.
+# -- Compiling module ex_stage
+# 
+# Top level modules:
+# 	ex_stage
+# End time: 13:26:09 on Sep 03,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Questa Altera Starter FPGA Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
+# Start time: 13:26:09 on Sep 03,2026
+# vlog src/pipeline/mem_stage.sv 
+# ** Note: (vlog-220) 'C:/altera_lite/25.1std/questa_fse/win64/../modelsim.ini' is used as the ini file.
+# -- Compiling module mem_stage
+# 
+# Top level modules:
+# 	mem_stage
+# End time: 13:26:09 on Sep 03,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Altera Starter FPGA Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
+# Start time: 13:26:10 on Sep 03,2026
+# vlog src/pipeline/wb_stage.sv 
+# ** Note: (vlog-220) 'C:/altera_lite/25.1std/questa_fse/win64/../modelsim.ini' is used as the ini file.
+# -- Compiling module wb_stage
+# 
+# Top level modules:
+# 	wb_stage
+# End time: 13:26:10 on Sep 03,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Altera Starter FPGA Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
+# Start time: 13:26:10 on Sep 03,2026
+# vlog src/pipeline/forwarding_unit.sv 
+# ** Note: (vlog-220) 'C:/altera_lite/25.1std/questa_fse/win64/../modelsim.ini' is used as the ini file.
+# -- Compiling module forwarding_unit
+# 
+# Top level modules:
+# 	forwarding_unit
+# End time: 13:26:10 on Sep 03,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Altera Starter FPGA Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
+# Start time: 13:26:10 on Sep 03,2026
+# vlog src/pipeline/hazard_unit.sv 
+# ** Note: (vlog-220) 'C:/altera_lite/25.1std/questa_fse/win64/../modelsim.ini' is used as the ini file.
+# -- Compiling module hazard_unit
+# 
+# Top level modules:
+# 	hazard_unit
+# End time: 13:26:11 on Sep 03,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Questa Altera Starter FPGA Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
+# Start time: 13:26:11 on Sep 03,2026
+# vlog src/pipeline/top.sv 
+# ** Note: (vlog-220) 'C:/altera_lite/25.1std/questa_fse/win64/../modelsim.ini' is used as the ini file.
+# -- Compiling module top
+# 
+# Top level modules:
+# 	top
+# End time: 13:26:11 on Sep 03,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Altera Starter FPGA Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
+# Start time: 13:26:11 on Sep 03,2026
+# vlog src/pipeline/accelerator/matmul_unit.sv 
+# ** Note: (vlog-220) 'C:/altera_lite/25.1std/questa_fse/win64/../modelsim.ini' is used as the ini file.
+# -- Compiling module matmul_unit
+# 
+# Top level modules:
+# 	matmul_unit
+# End time: 13:26:12 on Sep 03,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Questa Altera Starter FPGA Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
+# Start time: 13:26:12 on Sep 03,2026
+# vlog src/pipeline/accelerator/mac_unit.sv 
+# ** Note: (vlog-220) 'C:/altera_lite/25.1std/questa_fse/win64/../modelsim.ini' is used as the ini file.
+# -- Compiling module mac_unit
+# 
+# Top level modules:
+# 	mac_unit
+# End time: 13:26:12 on Sep 03,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Altera Starter FPGA Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
+# Start time: 13:26:12 on Sep 03,2026
+# vlog src/pipeline/accelerator/address_decoder.sv 
+# ** Note: (vlog-220) 'C:/altera_lite/25.1std/questa_fse/win64/../modelsim.ini' is used as the ini file.
+# -- Compiling module address_decoder
+# 
+# Top level modules:
+# 	address_decoder
+# End time: 13:26:12 on Sep 03,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Altera Starter FPGA Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
+# Start time: 13:26:12 on Sep 03,2026
+# vlog tb/tb_mac_unit.sv 
+# ** Note: (vlog-220) 'C:/altera_lite/25.1std/questa_fse/win64/../modelsim.ini' is used as the ini file.
+# -- Compiling module tb_mac_unit
+# 
+# Top level modules:
+# 	tb_mac_unit
+# End time: 13:26:13 on Sep 03,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Questa Altera Starter FPGA Edition-64 vopt 2025.2 Compiler 2025.05 May 31 2025
+# ** Warning: (vopt-10908) Some optimizations are turned off because the +acc switch is in effect.
+# Start time: 13:26:14 on Sep 03,2026
+# vopt "+acc" tb_mac_unit -o tb_mac_unit_acc 
+# ** Note: (vopt-220) 'C:/altera_lite/25.1std/questa_fse/win64/../modelsim.ini' is used as the ini file.
+# 
+# Top level modules:
+# 	tb_mac_unit
+# 
+# Analyzing design...
+# -- Loading module tb_mac_unit
+# -- Loading module mac_unit
+# Incremental compilation check found 1 design-unit (out of 2) may be reused.
+# Optimizing 1 design-unit (inlining 0/2 module instances):
+# -- Optimizing module tb_mac_unit(fast)
+# Optimized design name is tb_mac_unit_acc
+# End time: 13:26:16 on Sep 03,2026, Elapsed time: 0:00:02
+# Errors: 0, Warnings: 1
+# ** Note: (vsim-220) 'C:/altera_lite/25.1std/questa_fse/win64/../modelsim.ini' is used as the ini file.
+# vsim tb_mac_unit_acc 
+# Start time: 13:26:17 on Sep 03,2026
 # //  Questa Altera Starter FPGA Edition-64
 # //  Version 2025.2 win64 May 31 2025
 # //
@@ -12,211 +216,13 @@
 # // of the Customer's facilities without the express written permission of SISW,
 # // and may not be used in any way not expressly authorized by SISW.
 # //
-# do compile_pipeline.tcl
-# ** Warning: (vlib-34) Library already exists at "work".
-# Errors: 0, Warnings: 1
-# Questa Altera Starter FPGA Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
-# Start time: 13:35:09 on Jul 29,2026
-# vlog -reportprogress 300 src/pipeline/alu.sv 
-# ** Note: (vlog-220) 'C:/altera_lite/25.1std/questa_fse/win64/../modelsim.ini' is used as the ini file.
-# -- Compiling module alu
-# 
-# Top level modules:
-# 	alu
-# End time: 13:35:09 on Jul 29,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Questa Altera Starter FPGA Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
-# Start time: 13:35:09 on Jul 29,2026
-# vlog -reportprogress 300 src/pipeline/control_unit.sv 
-# ** Note: (vlog-220) 'C:/altera_lite/25.1std/questa_fse/win64/../modelsim.ini' is used as the ini file.
-# -- Compiling module control_unit
-# 
-# Top level modules:
-# 	control_unit
-# End time: 13:35:10 on Jul 29,2026, Elapsed time: 0:00:01
-# Errors: 0, Warnings: 0
-# Questa Altera Starter FPGA Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
-# Start time: 13:35:10 on Jul 29,2026
-# vlog -reportprogress 300 src/pipeline/data_memory.sv 
-# ** Note: (vlog-220) 'C:/altera_lite/25.1std/questa_fse/win64/../modelsim.ini' is used as the ini file.
-# -- Compiling module data_memory
-# 
-# Top level modules:
-# 	data_memory
-# End time: 13:35:10 on Jul 29,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Questa Altera Starter FPGA Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
-# Start time: 13:35:10 on Jul 29,2026
-# vlog -reportprogress 300 src/pipeline/imm_gen.sv 
-# ** Note: (vlog-220) 'C:/altera_lite/25.1std/questa_fse/win64/../modelsim.ini' is used as the ini file.
-# -- Compiling module imm_gen
-# 
-# Top level modules:
-# 	imm_gen
-# End time: 13:35:10 on Jul 29,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Questa Altera Starter FPGA Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
-# Start time: 13:35:10 on Jul 29,2026
-# vlog -reportprogress 300 src/pipeline/instruction_memory.sv 
-# ** Note: (vlog-220) 'C:/altera_lite/25.1std/questa_fse/win64/../modelsim.ini' is used as the ini file.
-# -- Compiling module instruction_memory
-# 
-# Top level modules:
-# 	instruction_memory
-# End time: 13:35:11 on Jul 29,2026, Elapsed time: 0:00:01
-# Errors: 0, Warnings: 0
-# Questa Altera Starter FPGA Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
-# Start time: 13:35:11 on Jul 29,2026
-# vlog -reportprogress 300 src/pipeline/register_file.sv 
-# ** Note: (vlog-220) 'C:/altera_lite/25.1std/questa_fse/win64/../modelsim.ini' is used as the ini file.
-# -- Compiling module register_file
-# 
-# Top level modules:
-# 	register_file
-# End time: 13:35:11 on Jul 29,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Questa Altera Starter FPGA Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
-# Start time: 13:35:11 on Jul 29,2026
-# vlog -reportprogress 300 src/pipeline/if_stage.sv 
-# ** Note: (vlog-220) 'C:/altera_lite/25.1std/questa_fse/win64/../modelsim.ini' is used as the ini file.
-# -- Compiling module if_stage
-# 
-# Top level modules:
-# 	if_stage
-# End time: 13:35:11 on Jul 29,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Questa Altera Starter FPGA Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
-# Start time: 13:35:12 on Jul 29,2026
-# vlog -reportprogress 300 src/pipeline/id_stage.sv 
-# ** Note: (vlog-220) 'C:/altera_lite/25.1std/questa_fse/win64/../modelsim.ini' is used as the ini file.
-# -- Compiling module id_stage
-# 
-# Top level modules:
-# 	id_stage
-# End time: 13:35:12 on Jul 29,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Questa Altera Starter FPGA Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
-# Start time: 13:35:12 on Jul 29,2026
-# vlog -reportprogress 300 src/pipeline/ex_stage.sv 
-# ** Note: (vlog-220) 'C:/altera_lite/25.1std/questa_fse/win64/../modelsim.ini' is used as the ini file.
-# -- Compiling module ex_stage
-# 
-# Top level modules:
-# 	ex_stage
-# End time: 13:35:12 on Jul 29,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Questa Altera Starter FPGA Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
-# Start time: 13:35:12 on Jul 29,2026
-# vlog -reportprogress 300 src/pipeline/mem_stage.sv 
-# ** Note: (vlog-220) 'C:/altera_lite/25.1std/questa_fse/win64/../modelsim.ini' is used as the ini file.
-# -- Compiling module mem_stage
-# 
-# Top level modules:
-# 	mem_stage
-# End time: 13:35:12 on Jul 29,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Questa Altera Starter FPGA Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
-# Start time: 13:35:13 on Jul 29,2026
-# vlog -reportprogress 300 src/pipeline/wb_stage.sv 
-# ** Note: (vlog-220) 'C:/altera_lite/25.1std/questa_fse/win64/../modelsim.ini' is used as the ini file.
-# -- Compiling module wb_stage
-# 
-# Top level modules:
-# 	wb_stage
-# End time: 13:35:13 on Jul 29,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Questa Altera Starter FPGA Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
-# Start time: 13:35:13 on Jul 29,2026
-# vlog -reportprogress 300 src/pipeline/forwarding_unit.sv 
-# ** Note: (vlog-220) 'C:/altera_lite/25.1std/questa_fse/win64/../modelsim.ini' is used as the ini file.
-# -- Compiling module forwarding_unit
-# 
-# Top level modules:
-# 	forwarding_unit
-# End time: 13:35:13 on Jul 29,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Questa Altera Starter FPGA Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
-# Start time: 13:35:13 on Jul 29,2026
-# vlog -reportprogress 300 src/pipeline/hazard_unit.sv 
-# ** Note: (vlog-220) 'C:/altera_lite/25.1std/questa_fse/win64/../modelsim.ini' is used as the ini file.
-# -- Compiling module hazard_unit
-# 
-# Top level modules:
-# 	hazard_unit
-# End time: 13:35:14 on Jul 29,2026, Elapsed time: 0:00:01
-# Errors: 0, Warnings: 0
-# Questa Altera Starter FPGA Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
-# Start time: 13:35:14 on Jul 29,2026
-# vlog -reportprogress 300 src/pipeline/top.sv 
-# ** Note: (vlog-220) 'C:/altera_lite/25.1std/questa_fse/win64/../modelsim.ini' is used as the ini file.
-# -- Compiling module top
-# 
-# Top level modules:
-# 	top
-# End time: 13:35:14 on Jul 29,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Questa Altera Starter FPGA Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
-# Start time: 13:35:14 on Jul 29,2026
-# vlog -reportprogress 300 tb/tb_pipeline.sv 
-# ** Note: (vlog-220) 'C:/altera_lite/25.1std/questa_fse/win64/../modelsim.ini' is used as the ini file.
-# -- Compiling module tb_pipeline
-# 
-# Top level modules:
-# 	tb_pipeline
-# End time: 13:35:14 on Jul 29,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Questa Altera Starter FPGA Edition-64 vopt 2025.2 Compiler 2025.05 May 31 2025
-# ** Warning: (vopt-10908) Some optimizations are turned off because the +acc switch is in effect.
-# Start time: 13:35:15 on Jul 29,2026
-# vopt -reportprogress 300 "+acc" tb_pipeline -o tb_pipeline_acc 
-# ** Note: (vopt-220) 'C:/altera_lite/25.1std/questa_fse/win64/../modelsim.ini' is used as the ini file.
-# 
-# Top level modules:
-# 	tb_pipeline
-# 
-# Analyzing design...
-# -- Loading module tb_pipeline
-# -- Loading module top
-# -- Loading module if_stage
-# -- Loading module instruction_memory
-# -- Loading module id_stage
-# -- Loading module control_unit
-# -- Loading module register_file
-# -- Loading module imm_gen
-# -- Loading module ex_stage
-# -- Loading module alu
-# -- Loading module mem_stage
-# -- Loading module data_memory
-# -- Loading module wb_stage
-# -- Loading module forwarding_unit
-# -- Loading module hazard_unit
-# Incremental compilation check found no design-units have changed.
-# Optimized design name is tb_pipeline_acc
-# End time: 13:35:16 on Jul 29,2026, Elapsed time: 0:00:01
-# Errors: 0, Warnings: 1
-# ** Note: (vsim-220) 'C:/altera_lite/25.1std/questa_fse/win64/../modelsim.ini' is used as the ini file.
-# vsim tb_pipeline_acc 
-# Start time: 13:35:16 on Jul 29,2026
 # Loading sv_std.std
-# Loading work.tb_pipeline(fast)
-# Loading work.top(fast)
-# Loading work.if_stage(fast)
-# Loading work.instruction_memory(fast)
-# Loading work.id_stage(fast)
-# Loading work.control_unit(fast)
-# Loading work.register_file(fast)
-# Loading work.imm_gen(fast)
-# Loading work.ex_stage(fast)
-# Loading work.alu(fast)
-# Loading work.mem_stage(fast)
-# Loading work.data_memory(fast)
-# Loading work.wb_stage(fast)
-# Loading work.forwarding_unit(fast)
-# Loading work.hazard_unit(fast)
-run 10ns
-run 10ns
-run 10ns
-add wave -position end  sim:/tb_pipeline/dut/clk
-add wave -position end  sim:/tb_pipeline/dut/reset
-# End time: 14:33:51 on Jul 29,2026, Elapsed time: 0:58:35
+# Loading work.tb_mac_unit(fast)
+# Loading work.mac_unit(fast)
+# TEST 1 PASSED: result = 18
+# TEST 2 PASSED: result = 100
+# TEST 3 PASSED: result = 177
+# ** Note: $finish    : tb/tb_mac_unit.sv(78)
+#    Time: 136 ns  Iteration: 0  Instance: /tb_mac_unit
+# End time: 13:26:17 on Sep 03,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
