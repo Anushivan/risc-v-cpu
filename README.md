@@ -27,7 +27,7 @@ A 32-bit RISC-V processor implemented in SystemVerilog. Includes a complete sing
 - [x] Compute core (parallel multiply-accumulate, 16-way MAC array)
 - [x] Integration with RISC-V memory bus (wired into MEM stage via address decoder)
 - [x] Software-controlled via load/store instructions from the CPU
-- [ ] End-to-end test v1: CPU program drives accelerator and verifies result
+- [X] End-to-end test v1: CPU program drives accelerator and verifies result
 - [ ] End-to-end test v2: verify performance improvement (cycles taken)
 **Verification (planned)**
 - [ ] UVM testbench with self-checking scoreboard

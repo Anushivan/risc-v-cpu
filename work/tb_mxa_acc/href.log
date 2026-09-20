@@ -1,0 +1,11 @@
+BEGIN 1:instruction_memory:fast:work
+    array :  1:tb_mxa:fast:work
+END 
+BEGIN 1:matmul_unit:fast:work
+    matrix_B :  1:tb_mxa:fast:work
+    state :  1:tb_mxa:fast:work
+    matrix_A :  1:tb_mxa:fast:work
+END 
+BEGIN 1:register_file:fast:work
+    regs :  1:tb_mxa:fast:work
+END 
