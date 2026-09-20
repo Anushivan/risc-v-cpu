@@ -24,7 +24,7 @@ always_ff @(posedge clk) begin
     
 if (we) begin
 
-memory[address] <= write_data;
+memory[address>>2] <= write_data;
 
 end
 
