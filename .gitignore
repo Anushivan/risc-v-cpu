@@ -2,3 +2,8 @@ sim/
 *.vcd
 *.out
 sim/sim_*
+
+# Questa/ModelSim build output
+work/
+transcript
+*.wlf
